@@ -6,9 +6,11 @@
   "dependencies": {
     "bugsnag": "^2.2.0",
     "electron": "^1.8.2",
-    "electron-debug": "^1.5.0"
+    "electron-debug": "^1.5.0",
+    "google-closure-compiler": "^20180204.0.0"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "compile": "google-closure-compiler --js=app.js --js_output_file=app.min.js --create_source_map=app.min.js.map --source_map_format=V3"
   }
 }
